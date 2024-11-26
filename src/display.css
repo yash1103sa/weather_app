@@ -1,0 +1,71 @@
+/* Main Card */
+.display-card {
+  display: flex;
+  flex-direction: row;
+  border-radius: 15px;
+  overflow: hidden;
+  background: #2b2b3d;
+  color: #f5f5f7;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.display-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+}
+
+/* Image Section */
+.image-section {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  height: 250px; /* Fixed height for consistency */
+}
+
+/* Details Section */
+.details-section {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #1f1f2c;
+}
+
+/* City Name */
+.city-name {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ff8c42;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Weather Info */
+.weather-info {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #bdbdbd;
+}
+
+.weather-info strong {
+  color: #ff8c42;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .display-card {
+    flex-direction: column;
+  }
+
+  .image-section {
+    height: 200px;
+  }
+
+  .details-section {
+    text-align: center;
+  }
+}
